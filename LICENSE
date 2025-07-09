@@ -1,0 +1,62 @@
+Business Relationship License (BRL) v1.0
+----------------------------------------
+
+Copyright (c) 2025 GI Intranet Project Contributors
+
+Permission is hereby granted, free of charge, to any person or entity (“You”) obtaining a copy of
+this software and associated documentation files (the “Software”), to exercise the following rights
+(subject to the Requirements and Restrictions below):
+
+1.  Rights Granted
+    --------------
+    a.  Use, copy, modify, merge, publish, distribute, sublicense and/or sell derivative works of the
+        Software, in source or binary form, for any purpose, commercial or non-commercial.
+    b.  Use the Software as the basis for community services, educational offerings, research,
+        internal enterprise applications, or public-facing platforms.
+
+2.  Requirements
+    ------------
+    a.  Attribution: You must retain in all copies or substantial portions of the Software the above
+        copyright notice and this license text.
+    b.  Source Availability: If You distribute modified or extended versions of the Software, You
+        must make your modifications publicly available under the same BRL terms, include a
+        clear “Changes by …” history, and link back to the original GI Intranet repository.
+    c.  Partnership Notice: If You intend to monetize or offer the Software or derivative works as
+        a paid service to third parties, You agree to notify the GI Intranet maintainers in writing
+        and explore a mutually beneficial partnership agreement (no fee is required, but formal
+        permission and collaboration are expected).
+
+3.  Restrictions
+    ------------
+    a.  No Private Forks for Commercial Gain Without Notice: You may not create closed-source,
+        private forks or withhold improvements for the sole purpose of commercializing the
+        Software—any commercial deployment must be accompanied by an open-source branch or
+        public changelog.
+    b.  No Endorsement Implied: Neither Your use of the Software nor distribution of derivatives
+        implies endorsement by the GI Intranet Project or its contributors.
+    c.  Trademark Use: “GI Intranet” is a registered mark. You may not use the name “GI Intranet”
+        in your product or service name, logo or marketing without prior written permission.
+
+4.  Disclaimer & Warranty
+    --------------------
+    THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+    INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR
+    CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+    ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+    THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+5.  Governing Law
+    -------------
+    This license shall be governed by and construed in accordance with the laws of the State of
+    _[Your State/Region Here]_, without reference to conflict-of-law principles.
+
+6.  Contact
+    -------
+    For notifications or partnership inquiries, please contact:
+
+        GI Intranet Maintainers  
+        Email: maintainers@gi-intranet.org  
+        GitHub: https://github.com/your-username/gi-intranet  
+
+By using this Software, You agree to abide by the terms of this Business Relationship License.  
