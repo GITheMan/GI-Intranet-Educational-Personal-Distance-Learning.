@@ -1,0 +1,11 @@
+gi-intranet/
+└── docs/
+    ├── sphinx/
+    │   ├── conf.py
+    │   ├── index.rst
+    │   ├── usage.rst
+    │   └── make.bat / Makefile
+    ├── plans.md
+    ├── roadmap.md
+    ├── CONTRIBUTING.md
+    └── education.md
