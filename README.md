@@ -1,5 +1,5 @@
 # GI Intranet   Your Sovereign Mesh, Intelligence Vault, AI & Simulation Lab, Knowledge Base, Media Center, Community Platform & Education Hub*
-
+Test net Pre-Launch For Educational Purposes.
 ```bash
 git clone https://github.com/your-username/gi-intranet.git
 ```
