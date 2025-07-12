@@ -1,5 +1,5 @@
 # GI Intranet   Your Sovereign Mesh, Intelligence Vault, AI & Simulation Lab, Knowledge Base, Media Center, Community Platform & Education Hub*
-Project Paused Until Later Notice (college amd futher distance self learning planning) Test net Pre-Launch For Educational Purposes.
+Project Paused Until Later Notice (college and futher distance self learning planning) Test net Pre-Launch For Educational Purposes.
 ```bash
 git clone https://github.com/your-username/gi-intranet.git
 ```
