@@ -1,0 +1,7 @@
+users:
+  - username: admin
+    password: admin123
+    role: admin
+  - username: student1
+    password: learnpass
+    role: student
