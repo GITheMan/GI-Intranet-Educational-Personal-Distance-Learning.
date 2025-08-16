@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GI Intranet</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    // Register service worker for offline-first
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js").catch(err => {
+          console.error("Service Worker registration failed:", err);
+        });
+      });
+    }
+  </script>
+</head>
+<body class="bg-slate-900 text-gray-100 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-slate-800 shadow-lg p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">GI Intranet</h1>
+    <nav>
+      <ul class="flex gap-4">
+        <li><a href="/docs/roadmap.md" class="hover:text-blue-400">Docs</a></li>
+        <li><a href="/education/" class="hover:text-blue-400">Education</a></li>
+        <li><a href="/platform/" class="hover:text-blue-400">Platform</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow p-6">
+    <h2 class="text-xl font-semibold mb-6">Main Directory</h2>
+
+    <!-- Grid of Sections -->
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Sites -->
+      <a href="/sites/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-globe fa-2x text-blue-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Sites</h3>
+        <p class="text-sm text-gray-400">Dashboards, Dev Vault, Admin Panel, Sandbox.</p>
+      </a>
+
+      <!-- Books -->
+      <a href="/books/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-book fa-2x text-green-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Books</h3>
+        <p class="text-sm text-gray-400">Digital library, programming/game dev curriculum, references.</p>
+      </a>
+
+      <!-- Docs -->
+      <a href="/docs/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-file-lines fa-2x text-yellow-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Docs</h3>
+        <p class="text-sm text-gray-400">Plans, roadmap, contribution guides, education standards.</p>
+      </a>
+
+      <!-- Education -->
+      <a href="/education/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-chalkboard-user fa-2x text-purple-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Education</h3>
+        <p class="text-sm text-gray-400">Curriculum templates, assessments, mentoring protocols.</p>
+      </a>
+
+      <!-- Platform -->
+      <a href="/platform/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-terminal fa-2x text-red-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Platform</h3>
+        <p class="text-sm text-gray-400">Code client, Git server, developer tools.</p>
+      </a>
+
+      <!-- Infrastructure -->
+      <a href="/infrastructure/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-network-wired fa-2x text-teal-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Infrastructure</h3>
+        <p class="text-sm text-gray-400">Energy systems, networking, offline-first setup.</p>
+      </a>
+
+      <!-- APIs -->
+      <a href="/apis/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-plug fa-2x text-pink-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">APIs</h3>
+        <p class="text-sm text-gray-400">Authentication, data endpoints, search, payments.</p>
+      </a>
+
+      <!-- Scripts -->
+      <a href="/scripts/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-code fa-2x text-orange-400 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Scripts</h3>
+        <p class="text-sm text-gray-400">Build, deploy, backup automation.</p>
+      </a>
+
+      <!-- Hidden Dev Vault (Easter Egg Link) -->
+      <a href="/sites/dev-vault/" class="bg-slate-800 rounded-2xl p-6 shadow hover:shadow-xl transition">
+        <i class="fa-solid fa-vault fa-2x text-gray-300 mb-3"></i>
+        <h3 class="text-lg font-bold mb-2">Dev Vault</h3>
+        <p class="text-sm text-gray-400">Hidden programming & game dev resources.</p>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 p-4 text-center text-sm text-gray-400">
+    © 2025 GI Intranet • Offline-First Learning & Development Hub
+  </footer>
+</body>
+</html>
