@@ -45,25 +45,131 @@ GI Intranet unites your community into a fully offline-capable mesh “cloud”�
 
 ## 🗂️ Repository Structure
 
-```text
+Here’s the **fully built-out file tree** (v1.0 baseline):
+
+---
+
+```plaintext
 gi-intranet/
-├── apis/
-├── sites/
-├── books/
-├── docs/
-│   ├── plans.md            # Infrastructure, Compute & Education Plans
+├── index.html                      # Main Intranet homepage
+├── service-worker.js               # Offline-first caching + PWA support
+├── manifest.json                   # PWA manifest
+├── README.md                       # Project overview
+
+├── apis/                           # API-related services
+│   ├── auth-api/                   # Authentication, onboarding, evaluation logic
+│   ├── payments-api/               # Stripe integration (later phase)
+│   ├── search-api/                 # Internal search engine logic
+│   └── data-api/                   # Data layer / endpoints for sites & books
+
+├── sites/                          # Internal hidden & visible sites
+│   ├── dev-vault/                  # Programming & Game Dev "Vault"
+│   │   ├── index.html              # Page content
+│   │   ├── styles.css
+│   │   ├── dev-vault.js
+│   │   └── assets/                 # Images, logos, video refs
+│   ├── dashboard/                  # User dashboards
+│   │   └── index.html
+│   ├── admin/                      # Admin control panel
+│   │   ├── admin.html
+│   │   └── admin_approvals.html
+│   └── sandbox/                    # Experimental/temporary apps
+│       └── index.html
+
+├── books/                          # Digital library resources
+│   ├── programming-game-dev-1.0.md # Textbook content
+│   ├── curriculum/
+│   │   ├── cs_basics.md
+│   │   ├── web_dev.md
+│   │   ├── game_dev_unreal.md
+│   │   ├── haskell.md
+│   │   └── electives.md
+│   └── references/
+│       ├── textbooks.md
+│       └── research-papers.md
+
+├── docs/                           # Documentation hub
+│   ├── plans.md                    # Infrastructure, Compute & Education Plans
 │   ├── roadmap.md
 │   ├── CONTRIBUTING.md
-│   └── education.md        # Evaluation & Mentoring Protocols, Curricula & Accreditation
-├── infrastructure/
-│   └── energy-systems/
-├── platform/
+│   └── education.md                # Evaluation & Mentoring Protocols, Curricula & Accreditation
+
+├── infrastructure/                 # Physical & virtual infrastructure
+│   ├── energy-systems/
+│   │   ├── solar.md
+│   │   ├── battery-storage.md
+│   │   └── backup-generators.md
+│   └── networking/
+│       ├── routers.md
+│       ├── modems.md
+│       └── esim.md
+
+├── platform/                       # Core platform code
 │   ├── git-server/
+│   │   └── setup.md
 │   └── code-client/
-├── education/              # Curriculum templates, assessment rubrics
-├── scripts/
-└── README.md
+│       ├── cli.md
+│       └── editor-plugins.md
+
+├── education/                      # Curriculum, rubrics, evaluations
+│   ├── templates/
+│   │   ├── course-template.md
+│   │   └── lesson-template.md
+│   ├── assessments/
+│   │   ├── evaluation-test.md
+│   │   ├── scoring-logic.md
+│   │   └── approval-protocol.md
+│   └── mentoring/
+│       ├── mentor-guide.md
+│       └── student-handbook.md
+
+├── scripts/                        # Utility scripts
+│   ├── build.sh
+│   ├── deploy.sh
+│   └── backup.sh
+
+├── config/                         # Configurations
+│   ├── app-config.json
+│   ├── db-config.json
+│   └── auth-config.json
+
+├── data/                           # Local data persistence
+│   ├── users.json
+│   ├── scores.json
+│   └── payments.json
+
+├── assets/                         # Shared global assets
+│   ├── css/
+│   │   └── main.css
+│   ├── js/
+│   │   └── main.js
+│   ├── img/
+│   │   ├── logo.png
+│   │   └── icons/
+│   └── fonts/
+
+└── tests/                          # Testing framework
+    ├── unit/
+    │   ├── auth.test.js
+    │   ├── scoring.test.js
+    │   └── search.test.js
+    └── integration/
+        ├── dashboard.test.js
+        └── payment-flow.test.js
 ```
+
+---
+
+✅ This structure now:
+
+* Covers **every layer** (sites, APIs, books, education, infra, platform).
+* Preps for **offline-first caching** (service worker + manifest).
+* Supports **hidden searchable sites** like `dev-vault`.
+* Keeps future-proofing (Stripe, networking, game dev, curriculum).
+* Adds **tests, config, assets, and data persistence** so nothing’s missing.
+
+---
+
 
 ---
 
